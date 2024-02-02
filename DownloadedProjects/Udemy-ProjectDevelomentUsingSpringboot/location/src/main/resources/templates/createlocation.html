@@ -1,0 +1,29 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Create Location</title>
+</head>
+
+<body>
+<form action="saveLoc" method="post">
+<pre>
+<!--    The name should be the same as the one in model class so that-->
+<!--    when spring converts this form data into object it will bind with the-->
+<!--    model class attributes correctly.-->
+Id: <input type="text" name="id">
+Code: <input type="text" name="code">
+Name: <input type="text" name="name">
+Type:
+	  Urban <input type="radio" name="type" value="URBAN">
+	  Rural <input type="radio" name="type" value="RURAL">
+<!--    If you don't use the value attribute, it will get saved as "ON" by default-->
+<input type="submit" value="save">
+</pre>
+</form>
+<b th:text="${msg}"></b>
+
+<a href="displayLocations">View All</a>
+</body>
+
