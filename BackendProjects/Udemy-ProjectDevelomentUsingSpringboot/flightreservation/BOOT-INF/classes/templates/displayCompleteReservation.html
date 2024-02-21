@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Display Complete Reservation</title>
+</head>
+<body>
+<h2>Complete Reservation : </h2>
+<p>Airline: <span th:text="${flight.operatingAirlines}"></span></p>
+<p>Departure City: <span th:text="${flight.departureCity}"></span></p>
+<p>Arrival City: <span th:text="${flight.arrivalCity}"></span></p>
+
+<form action="confirmReservation" method="post">
+<pre>
+    <h2>Passenger details :</h2>
+First Name:<input type="text" name="pfirstname"/>
+Last Name:<input type="text" name="plastname"/>
+Email:<input type="text" name="pemail"/>
+Phone:<input type="text" name="pphone"/>
+
+    <h2>Credit card details :</h2>
+Name on the card:<input type="text" name="cardname"/>
+Card number:<input type="text" name="cardnumber"/>
+Expiry date:<input type="text" name="cardexpiry"/>
+Security code:<input type="text" name="cardsecurity"/>
+
+    <input type="hidden" name="flightId" th:value="${flight.id}">
+    <input type="submit" value="confirm">
+
+</pre>
+</form>
+</body>
+</html>

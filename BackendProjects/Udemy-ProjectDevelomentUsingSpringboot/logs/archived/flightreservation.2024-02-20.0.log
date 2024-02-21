@@ -1,0 +1,344 @@
+2024-02-20 08:07:19 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 26104 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:07:19 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:07:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:07:20 - Finished Spring Data repository scanning in 88 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:07:21 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:07:21 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:07:21 - Starting service [Tomcat]
+2024-02-20 08:07:21 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:07:21 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:07:21 - Root WebApplicationContext: initialization completed in 1997 ms
+2024-02-20 08:07:21 - HikariPool-1 - Starting...
+2024-02-20 08:07:22 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6750e381
+2024-02-20 08:07:22 - HikariPool-1 - Start completed.
+2024-02-20 08:07:22 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:07:22 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:07:22 - HHH000026: Second-level cache disabled
+2024-02-20 08:07:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:07:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:07:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:07:24 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:07:25 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'encoder': No qualifying bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-02-20 08:07:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:07:25 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:07:25 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:07:25 - Stopping service [Tomcat]
+2024-02-20 08:07:25 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-20 08:07:26 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field encoder in com.projects2024.flightreservation.Controller.UserController required a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder' in your configuration.
+
+2024-02-20 08:14:40 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 7460 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:14:40 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:14:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:14:41 - Finished Spring Data repository scanning in 85 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:14:42 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:14:42 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:14:42 - Starting service [Tomcat]
+2024-02-20 08:14:42 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:14:43 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:14:43 - Root WebApplicationContext: initialization completed in 2436 ms
+2024-02-20 08:14:43 - HikariPool-1 - Starting...
+2024-02-20 08:14:44 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28b523a
+2024-02-20 08:14:44 - HikariPool-1 - Start completed.
+2024-02-20 08:14:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:14:44 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:14:44 - HHH000026: Second-level cache disabled
+2024-02-20 08:14:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:14:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:14:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:14:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:14:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-20 08:14:49 - Adding welcome page template: index
+2024-02-20 08:14:50 - 
+
+Using generated security password: 2350d00b-f142-454f-8997-5b5d007eb763
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-20 08:14:50 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@377a1763, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61f62b80, org.springframework.security.web.context.SecurityContextHolderFilter@23b4f0a9, org.springframework.security.web.header.HeaderWriterFilter@76b8b6a6, org.springframework.web.filter.CorsFilter@387bbd7a, org.springframework.security.web.csrf.CsrfFilter@2f89b44e, org.springframework.security.web.authentication.logout.LogoutFilter@31620971, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d267575, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1928208d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22cf6c9c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5da08e9a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56f8ab05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@652855c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4569b6a9, org.springframework.security.web.access.ExceptionTranslationFilter@1737acc0, org.springframework.security.web.access.intercept.AuthorizationFilter@4f27643d]
+2024-02-20 08:14:50 - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:14:50 - Tomcat started on port 8080 (http) with context path '/flightreservationweb'
+2024-02-20 08:14:51 - Started FlightreservationApplication in 10.917 seconds (process running for 11.745)
+2024-02-20 08:15:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:15:32 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:15:32 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:16:03 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 23380 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:16:03 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:16:04 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'encoder' defined in class path resource [com/projects2024/flightreservation/SecurityConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=encoder; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/projects2024/flightreservation/SecurityConfig.class]] for bean 'encoder' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userController; factoryMethodName=encoder; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/projects2024/flightreservation/Controller/UserController.class]] bound.
+2024-02-20 08:16:04 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-20 08:16:04 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'encoder', defined in class path resource [com/projects2024/flightreservation/SecurityConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/projects2024/flightreservation/Controller/UserController.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2024-02-20 08:16:46 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 12292 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:16:46 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:16:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:16:47 - Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:16:48 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:16:48 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:16:48 - Starting service [Tomcat]
+2024-02-20 08:16:48 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:16:48 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:16:48 - Root WebApplicationContext: initialization completed in 1629 ms
+2024-02-20 08:16:48 - HikariPool-1 - Starting...
+2024-02-20 08:16:48 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@682e422c
+2024-02-20 08:16:48 - HikariPool-1 - Start completed.
+2024-02-20 08:16:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:16:48 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:16:48 - HHH000026: Second-level cache disabled
+2024-02-20 08:16:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:16:51 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:16:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:16:52 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:16:53 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'encoder': Error creating bean with name 'userController': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-02-20 08:16:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:16:53 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:16:53 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:16:53 - Stopping service [Tomcat]
+2024-02-20 08:16:53 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-20 08:16:53 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  userController (field private org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder com.projects2024.flightreservation.Controller.UserController.encoder)
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-02-20 08:17:24 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 26244 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:17:24 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:17:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:17:25 - Finished Spring Data repository scanning in 113 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:17:25 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:17:25 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:17:25 - Starting service [Tomcat]
+2024-02-20 08:17:25 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:17:25 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:17:26 - Root WebApplicationContext: initialization completed in 1790 ms
+2024-02-20 08:17:26 - HikariPool-1 - Starting...
+2024-02-20 08:17:26 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b48f0f4
+2024-02-20 08:17:26 - HikariPool-1 - Start completed.
+2024-02-20 08:17:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:17:26 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:17:26 - HHH000026: Second-level cache disabled
+2024-02-20 08:17:27 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:17:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:17:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:17:28 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:17:28 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'encoder': Error creating bean with name 'userController': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-02-20 08:17:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:17:28 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:17:28 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:17:28 - Stopping service [Tomcat]
+2024-02-20 08:17:28 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-20 08:17:28 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌──->──┐
+|  userController (field private org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder com.projects2024.flightreservation.Controller.UserController.encoder)
+└──<-──┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-02-20 08:18:21 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 21048 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:18:21 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:18:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:18:22 - Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:18:23 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:18:23 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:18:23 - Starting service [Tomcat]
+2024-02-20 08:18:23 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:18:23 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:18:23 - Root WebApplicationContext: initialization completed in 1788 ms
+2024-02-20 08:18:23 - HikariPool-1 - Starting...
+2024-02-20 08:18:24 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@310d57b1
+2024-02-20 08:18:24 - HikariPool-1 - Start completed.
+2024-02-20 08:18:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:18:24 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:18:24 - HHH000026: Second-level cache disabled
+2024-02-20 08:18:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:18:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:18:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:18:26 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:18:28 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-20 08:18:28 - Adding welcome page template: index
+2024-02-20 08:18:28 - 
+
+Using generated security password: 501d1e3b-4d91-4843-9928-f61ee6a71781
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-20 08:18:29 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@110b6c78, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e62d757, org.springframework.security.web.context.SecurityContextHolderFilter@17524c36, org.springframework.security.web.header.HeaderWriterFilter@466fd19b, org.springframework.web.filter.CorsFilter@597f2d3f, org.springframework.security.web.csrf.CsrfFilter@11c68269, org.springframework.security.web.authentication.logout.LogoutFilter@652855c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@42014a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@588b02a0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7746330a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63069995, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@730a140b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f29046b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3de4f936, org.springframework.security.web.access.ExceptionTranslationFilter@1495f70, org.springframework.security.web.access.intercept.AuthorizationFilter@36c8e1c6]
+2024-02-20 08:18:29 - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:18:29 - Tomcat started on port 8080 (http) with context path '/flightreservationweb'
+2024-02-20 08:18:29 - Started FlightreservationApplication in 8.476 seconds (process running for 9.343)
+2024-02-20 08:18:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:18:39 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:18:39 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:18:46 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 24368 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:18:46 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:18:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:18:47 - Finished Spring Data repository scanning in 87 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:18:48 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:18:48 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:18:48 - Starting service [Tomcat]
+2024-02-20 08:18:48 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:18:48 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:18:48 - Root WebApplicationContext: initialization completed in 2019 ms
+2024-02-20 08:18:48 - HikariPool-1 - Starting...
+2024-02-20 08:18:49 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52f8a6f4
+2024-02-20 08:18:49 - HikariPool-1 - Start completed.
+2024-02-20 08:18:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:18:49 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:18:49 - HHH000026: Second-level cache disabled
+2024-02-20 08:18:50 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:18:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:18:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:18:53 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:18:54 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-20 08:18:54 - Adding welcome page template: index
+2024-02-20 08:18:55 - 
+
+Using generated security password: 40904c6e-17e8-44e1-817d-1176a0f5a890
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-20 08:18:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56a8b19f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5927473a, org.springframework.security.web.context.SecurityContextHolderFilter@6bd5aa8b, org.springframework.security.web.header.HeaderWriterFilter@83b39c3, org.springframework.web.filter.CorsFilter@36c45b54, org.springframework.security.web.csrf.CsrfFilter@24e0bdb, org.springframework.security.web.authentication.logout.LogoutFilter@5e78dd7f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3de4f936, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@108a7fff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2d6a6887, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f160341, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1737acc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30ffc3c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e5d10fc, org.springframework.security.web.access.ExceptionTranslationFilter@2c3a2935, org.springframework.security.web.access.intercept.AuthorizationFilter@7746330a]
+2024-02-20 08:18:55 - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:18:55 - Tomcat started on port 8080 (http) with context path '/flightreservationweb'
+2024-02-20 08:18:55 - Started FlightreservationApplication in 9.923 seconds (process running for 10.857)
+2024-02-20 08:20:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20 08:20:57 - Initializing Servlet 'dispatcherServlet'
+2024-02-20 08:20:57 - Completed initialization in 2 ms
+2024-02-20 08:24:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:24:55 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:24:55 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:27:42 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 20648 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:27:42 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:27:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:27:43 - Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:27:44 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:27:44 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:27:44 - Starting service [Tomcat]
+2024-02-20 08:27:44 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:27:44 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:27:44 - Root WebApplicationContext: initialization completed in 1693 ms
+2024-02-20 08:27:44 - HikariPool-1 - Starting...
+2024-02-20 08:27:45 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@310d57b1
+2024-02-20 08:27:45 - HikariPool-1 - Start completed.
+2024-02-20 08:27:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:27:45 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:27:45 - HHH000026: Second-level cache disabled
+2024-02-20 08:27:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:27:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:27:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:27:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:27:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-20 08:27:49 - Adding welcome page template: index
+2024-02-20 08:27:50 - 
+
+Using generated security password: b703763c-3c0e-4ffa-b3aa-2db939816111
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-20 08:27:50 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@252459b2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5128efc, org.springframework.security.web.context.SecurityContextHolderFilter@48d6248d, org.springframework.security.web.header.HeaderWriterFilter@730a140b, org.springframework.web.filter.CorsFilter@438a2337, org.springframework.security.web.csrf.CsrfFilter@7fb70e94, org.springframework.security.web.authentication.logout.LogoutFilter@1928208d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7597ae32, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@83b39c3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@593d5f39, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7746330a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c32908c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@588b02a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e537465, org.springframework.security.web.access.ExceptionTranslationFilter@17524c36, org.springframework.security.web.access.intercept.AuthorizationFilter@6d1c15cb]
+2024-02-20 08:27:50 - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:27:50 - Tomcat started on port 8080 (http) with context path '/flightreservationweb'
+2024-02-20 08:27:51 - Started FlightreservationApplication in 8.748 seconds (process running for 9.641)
+2024-02-20 08:27:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20 08:27:51 - Initializing Servlet 'dispatcherServlet'
+2024-02-20 08:27:51 - Completed initialization in 2 ms
+2024-02-20 08:28:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:28:47 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:28:47 - HikariPool-1 - Shutdown completed.
+2024-02-20 08:29:35 - Starting FlightreservationApplication using Java 18.0.2.1 with PID 25672 (D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation\target\classes started by hkeshavarao in D:\Springboot2024\BackendProjects\Udemy-ProjectDevelomentUsingSpringboot\flightreservation)
+2024-02-20 08:29:35 - No active profile set, falling back to 1 default profile: "default"
+2024-02-20 08:29:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-20 08:29:35 - Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
+2024-02-20 08:29:36 - Tomcat initialized with port 8080 (http)
+2024-02-20 08:29:36 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:29:36 - Starting service [Tomcat]
+2024-02-20 08:29:36 - Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-20 08:29:36 - Initializing Spring embedded WebApplicationContext
+2024-02-20 08:29:36 - Root WebApplicationContext: initialization completed in 1743 ms
+2024-02-20 08:29:36 - HikariPool-1 - Starting...
+2024-02-20 08:29:37 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63d677f5
+2024-02-20 08:29:37 - HikariPool-1 - Start completed.
+2024-02-20 08:29:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-20 08:29:37 - HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-20 08:29:37 - HHH000026: Second-level cache disabled
+2024-02-20 08:29:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-20 08:29:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-20 08:29:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:29:40 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-20 08:29:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-20 08:29:42 - Adding welcome page template: index
+2024-02-20 08:29:42 - 
+
+Using generated security password: 2570b53f-8c71-4aa7-ac7d-a4ebed30909f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-20 08:29:43 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2da273b3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b02909d, org.springframework.security.web.context.SecurityContextHolderFilter@62099f75, org.springframework.security.web.header.HeaderWriterFilter@311819e8, org.springframework.web.filter.CorsFilter@655008a2, org.springframework.security.web.csrf.CsrfFilter@349469db, org.springframework.security.web.authentication.logout.LogoutFilter@252459b2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e5d10fc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36c8e1c6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@424461ad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2914f916, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a2c69a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12581426, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cc5bdbd, org.springframework.security.web.access.ExceptionTranslationFilter@619dc070, org.springframework.security.web.access.intercept.AuthorizationFilter@2d6a6887]
+2024-02-20 08:29:43 - Starting ProtocolHandler ["http-nio-8080"]
+2024-02-20 08:29:43 - Tomcat started on port 8080 (http) with context path '/flightreservationweb'
+2024-02-20 08:29:43 - Started FlightreservationApplication in 8.961 seconds (process running for 9.769)
+2024-02-20 08:29:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-20 08:29:43 - Initializing Servlet 'dispatcherServlet'
+2024-02-20 08:29:43 - Completed initialization in 3 ms
+2024-02-20 08:30:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-20 08:30:08 - HikariPool-1 - Shutdown initiated...
+2024-02-20 08:30:08 - HikariPool-1 - Shutdown completed.

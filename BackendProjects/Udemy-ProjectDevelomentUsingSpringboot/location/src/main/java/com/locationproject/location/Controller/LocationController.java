@@ -1,11 +1,13 @@
 package com.locationproject.location.Controller;
 
+import com.locationproject.location.DAO.LocationDAO;
 import com.locationproject.location.Service.LocationService;
 import com.locationproject.location.Util.EmailUtil;
+import com.locationproject.location.Util.ReportUtil;
 import com.locationproject.location.model.Location;
+import jakarta.servlet.ServletContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +22,16 @@ public class LocationController {
     LocationService locationService;
 
     @Autowired
+    LocationDAO locationDAO;
+
+    @Autowired
+    ReportUtil reportUtil;
+
+    @Autowired
     EmailUtil util;
+
+    @Autowired
+    ServletContext sc;
 
     @RequestMapping("/showcreate")
     public String showCreate(){
@@ -68,5 +79,14 @@ public class LocationController {
         List<Location> list = locationService.getAllLocations();
         modelMap.addAttribute("locations",list);
         return ("displayLocations");
+    }
+
+    @RequestMapping("/generateReport")
+    public String generateReport() {
+        List<Object[]> data = locationDAO.findByTypeAndTypeCount();
+        String path = sc.getRealPath("/");
+        //web app will store the pie chart in the root path
+        reportUtil.generatePieCharts(path,data);
+        return("report");
     }
 }

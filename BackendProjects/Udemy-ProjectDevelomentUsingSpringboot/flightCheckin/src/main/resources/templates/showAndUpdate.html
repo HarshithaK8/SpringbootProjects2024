@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Checkin page</title>
+</head>
+<body>
+<h2>Flight Details : </h2>
+Flight ID : <p th:text="${reservation.flight.id}"></p><br>
+Flight number : <p th:text="${reservation.flight.flightNumber}"></p><br>
+Operating Airlines : <p th:text="${reservation.flight.operatingAirlines}"></p><br>
+Departure City : <p th:text="${reservation.flight.departureCity}"></p><br>
+Arrival City : <p th:text="${reservation.flight.arrivalCity}"></p><br>
+Date of Departure : <p th:text="${reservation.flight.dateOfDeparture}"></p><br>
+Estimated departure time : <p th:text="${reservation.flight.estimatedDepartureTime}"></p><br>
+
+<h2>Passenger details : </h2>
+Passenger ID : <p th:text="${reservation.passenger.id}"></p>
+First name : <p th:text="${reservation.passenger.firstName}"></p>
+Last name : <p th:text="${reservation.passenger.lastName}"></p>
+Email : <p th:text="${reservation.passenger.email}"></p>
+Phone : <p th:text="${reservation.passenger.phone}"></p>
+
+<form action="completeCheckin" method="post">
+    <pre>
+        Enter the number of bags you want to checkin : <input type="text" name="noOfBags">
+        <input type="hidden" th:value= "${reservation.id}" name="reservationId">
+        <input type="submit" value="Checkin">
+    </pre>
+</form>
+</body>
+</html>
